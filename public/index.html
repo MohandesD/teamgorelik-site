@@ -30,9 +30,6 @@
         radial-gradient(circle at 50% 90%, rgba(245,158,11,.10), transparent 24%),
         linear-gradient(180deg, #f9fbff, var(--cream));
       padding: clamp(16px, 3vw, 28px);
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
     .orb, .orb2, .orb3 {
       position: fixed;
@@ -48,6 +45,7 @@
     .orb3 { width: 220px; height: 220px; background: rgba(245,158,11,.10); bottom: 1%; left: 20%; }
     .frame {
       width: min(100%, 960px);
+      margin: 0 auto;
       position: relative;
       z-index: 1;
     }
@@ -162,7 +160,6 @@
       .grid { grid-template-columns: 1fr; }
     }
     @media (max-width: 560px) {
-      body { align-items: stretch; }
       .card { padding: 22px 18px; }
       .footer { flex-direction: column; align-items: flex-start; }
       .orb, .orb2, .orb3 { opacity: .3; filter: blur(34px); }
